@@ -1,4 +1,6 @@
 
+using DineyApi.Clients;
+
 namespace DineyApi
 {
     public class Program
@@ -13,6 +15,11 @@ namespace DineyApi
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            builder.Services.AddHttpClient<DisneyApiClient>(client =>
+            {
+                client.BaseAddress = new Uri("https://api.disneyapi.dev/");
+            });
 
             var app = builder.Build();
 
