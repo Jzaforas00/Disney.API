@@ -11,9 +11,12 @@ namespace DineyApi.Clients
             _http = http;
         }
 
-        public async Task<DisneyCharacterResponse?> GetCharactersAsync(int page, string? name)
+        public async Task<DisneyCharacterResponse?> GetCharactersAsync(
+            int page,
+            int pageSize,
+            string? name)
         {
-            var url = $"character?page={page}";
+            var url = $"character?page={page}&pageSize={pageSize}";
 
             if (!string.IsNullOrWhiteSpace(name))
                 url += $"&name={name}";

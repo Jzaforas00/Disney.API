@@ -1,0 +1,199 @@
+/* Reset básico */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+/* Animación de fondo */
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, #facc15 1px, transparent 1px),
+            radial-gradient(circle, #38bdf8 1px, transparent 1px);
+    background-size: 120px 120px, 80px 80px;
+    opacity: 0.8;
+    z-index: 0;
+    pointer-events: none;
+
+    animation: moveBackground 15s linear infinite;
+}
+
+@keyframes moveBackground {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-200px, -200px);
+  }
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 10px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #facc15;
+    text-shadow: 0 0 10px rgba(250, 204, 21, 0.6);
+}
+
+/* SECCIONES */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+main, header{
+    position: relative;
+    z-index: 1;   
+}
+
+.api-section {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 15px;
+    backdrop-filter: blur(10px);
+}
+
+/* REST vs GRAPHQL colores */
+.rest {
+    border: 2px solid #3b82f6;
+}
+
+.graphql {
+    border: 2px solid #a855f7;
+}
+
+/* CONTROLES */
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    background: #facc15;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 15px;
+    align-items: stretch;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 150px;
+    overflow: hidden;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+.card img {
+    width: 100%;
+    height: 120px;      
+    object-fit: cover;      
+    border-radius: 10px;
+}
+
+.card h4 {
+    margin: 8px 0 0 0;
+    font-size: 14px;
+    color: white;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* PAGINACIÓN */
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* DETALLE (MODAL) */
+.detalle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detalle-content {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.detalle img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+#cerrar {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+/* oculto */
+.hidden {
+    display: none;
+}

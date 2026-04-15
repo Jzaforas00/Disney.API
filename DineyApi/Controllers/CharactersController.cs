@@ -18,9 +18,10 @@ namespace DineyApi.Controllers
         [HttpGet]
         public async Task<IActionResult> GetCharacters(
             int page = 1,
+            int pageSize = 50,
             string? name = null)
         {
-            var result = await _client.GetCharactersAsync(page, name);
+            var result = await _client.GetCharactersAsync(page, pageSize, name);
             return Ok(result);
         }
 

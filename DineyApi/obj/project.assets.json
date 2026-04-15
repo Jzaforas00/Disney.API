@@ -3438,23 +3438,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Alumno tardes\\.nuget\\packages\\": {},
+    "C:\\Users\\Propietario\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alumno tardes\\source\\repos\\DineyApi\\DineyApi\\DineyApi.csproj",
+      "projectUniqueName": "C:\\users\\Propietario\\source\\repos\\Disney.API\\DineyApi\\DineyApi.csproj",
       "projectName": "DineyApi",
-      "projectPath": "C:\\Users\\Alumno tardes\\source\\repos\\DineyApi\\DineyApi\\DineyApi.csproj",
-      "packagesPath": "C:\\Users\\Alumno tardes\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alumno tardes\\source\\repos\\DineyApi\\DineyApi\\obj\\",
+      "projectPath": "C:\\users\\Propietario\\source\\repos\\Disney.API\\DineyApi\\DineyApi.csproj",
+      "packagesPath": "C:\\Users\\Propietario\\.nuget\\packages\\",
+      "outputPath": "C:\\users\\Propietario\\source\\repos\\Disney.API\\DineyApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Alumno tardes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Propietario\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3520,6 +3520,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.25, 8.0.25]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[8.0.25, 8.0.25]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.25, 8.0.25]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[8.0.25, 8.0.25]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"

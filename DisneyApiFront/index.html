@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Disney API</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>✨ Disney Explorer</h1>
+    <p>Explora personajes con REST y GraphQL</p>
+  </header>
+
+  <main>
+
+    <!-- REST -->
+    <section class="api-section rest">
+      <h2>REST API</h2>
+
+      <div class="controls">
+        <input id="searchInput" type="text" placeholder="Buscar personaje...">
+        <button onclick="buscarREST()">Buscar</button>
+      </div>
+
+      <div class="cards" id="rest-list"></div>
+
+      <div class="pagination">
+        <button onclick="anterior()">Anterior</button>
+        <span id="pagina-rest">Página 1</span>
+        <button onclick="siguiente()">Siguiente</button>
+      </div>
+    </section>
+
+    <!-- GRAPHQL -->
+    <section class="api-section graphql">
+      <h2>GraphQL API</h2>
+
+      <div class="controls">
+        <input type="text" placeholder="Buscar personaje...">
+        <button onclick="buscarGraphQL()">Buscar</button>
+      </div>
+
+      <div class="cards" id="graphql-list"></div>
+
+      <div class="pagination">
+        <button>Anterior</button>
+        <span id="pagina-graphql">Página 1</span>
+        <button>Siguiente</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- DETALLE -->
+  <div id="detalle" class="detalle hidden">
+    <div class="detalle-content">
+      <span id="cerrar">✖</span>
+      <h2 id="detalle-nombre"></h2>
+      <img id="detalle-img">
+      <p id="detalle-info"></p>
+    </div>
+  </div>
+
+    <script src="js/scriptREST.js"></script>
+    <script src="js/scriptGraphQL.js"></script>
+</body>
+</html>

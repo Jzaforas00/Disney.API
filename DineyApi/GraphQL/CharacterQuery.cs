@@ -12,9 +12,9 @@ namespace DineyApi.GraphQL
             _client = client;
         }
 
-        public async Task<List<Character>> GetCharacters(int page, string? name)
+        public async Task<List<Character>> GetCharacters(int page, int pageSize, string? name)
         {
-            var result = await _client.GetCharactersAsync(page, name);
+            var result = await _client.GetCharactersAsync(page, pageSize, name);
 
             return result?.data?
                        .Where(x => x != null)
