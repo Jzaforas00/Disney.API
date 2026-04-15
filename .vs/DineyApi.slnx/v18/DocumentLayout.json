@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Alumno tardes\\source\\repos\\DineyApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AFC0C7ED-5F0C-CB88-8A46-DF6A863478E2}|DineyApi\\DineyApi.csproj|c:\\users\\alumno tardes\\source\\repos\\dineyapi\\dineyapi\\clients\\disneyapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFC0C7ED-5F0C-CB88-8A46-DF6A863478E2}|DineyApi\\DineyApi.csproj|solutionrelative:dineyapi\\clients\\disneyapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AFC0C7ED-5F0C-CB88-8A46-DF6A863478E2}|DineyApi\\DineyApi.csproj|c:\\users\\alumno tardes\\source\\repos\\dineyapi\\dineyapi\\graphql\\characterquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFC0C7ED-5F0C-CB88-8A46-DF6A863478E2}|DineyApi\\DineyApi.csproj|solutionrelative:dineyapi\\graphql\\characterquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFC0C7ED-5F0C-CB88-8A46-DF6A863478E2}|DineyApi\\DineyApi.csproj|c:\\users\\alumno tardes\\source\\repos\\dineyapi\\dineyapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFC0C7ED-5F0C-CB88-8A46-DF6A863478E2}|DineyApi\\DineyApi.csproj|solutionrelative:dineyapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,14 +31,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DisneyApiClient.cs",
-              "DocumentMoniker": "C:\\Users\\Alumno tardes\\source\\repos\\DineyApi\\DineyApi\\Clients\\DisneyApiClient.cs",
-              "RelativeDocumentMoniker": "DineyApi\\Clients\\DisneyApiClient.cs",
-              "ToolTip": "C:\\Users\\Alumno tardes\\source\\repos\\DineyApi\\DineyApi\\Clients\\DisneyApiClient.cs",
-              "RelativeToolTip": "DineyApi\\Clients\\DisneyApiClient.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAA3wC0AAAAJAAAAAAAAAA==",
+              "Title": "CharacterQuery.cs",
+              "DocumentMoniker": "C:\\Users\\Alumno tardes\\source\\repos\\DineyApi\\DineyApi\\GraphQL\\CharacterQuery.cs",
+              "RelativeDocumentMoniker": "DineyApi\\GraphQL\\CharacterQuery.cs",
+              "ToolTip": "C:\\Users\\Alumno tardes\\source\\repos\\DineyApi\\DineyApi\\GraphQL\\CharacterQuery.cs",
+              "RelativeToolTip": "DineyApi\\GraphQL\\CharacterQuery.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBsAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T09:05:46.367Z",
+              "WhenOpened": "2026-04-15T10:04:17.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Alumno tardes\\source\\repos\\DineyApi\\DineyApi\\Program.cs",
+              "RelativeDocumentMoniker": "DineyApi\\Program.cs",
+              "ToolTip": "C:\\Users\\Alumno tardes\\source\\repos\\DineyApi\\DineyApi\\Program.cs",
+              "RelativeToolTip": "DineyApi\\Program.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCkAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T10:01:20.663Z",
               "EditorCaption": ""
             }
           ]

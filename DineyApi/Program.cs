@@ -1,5 +1,6 @@
 
 using DineyApi.Clients;
+using DineyApi.GraphQL;
 
 namespace DineyApi
 {
@@ -21,6 +22,10 @@ namespace DineyApi
                 client.BaseAddress = new Uri("https://api.disneyapi.dev/");
             });
 
+            builder.Services
+                .AddGraphQLServer()
+                .AddQueryType<CharacterQuery>();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -33,6 +38,8 @@ namespace DineyApi
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
+
+            app.MapGraphQL();
 
 
             app.MapControllers();
