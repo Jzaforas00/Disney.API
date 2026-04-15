@@ -33,5 +33,10 @@ namespace DineyApi.GraphQL
                        .ToList()
                    ?? new List<Character>();
         }
+
+        public async Task<Character?> GetCharacterById(int id)
+        {
+            return await _client.GetCharacterByIdAsync(id);
+        }
     }
 }

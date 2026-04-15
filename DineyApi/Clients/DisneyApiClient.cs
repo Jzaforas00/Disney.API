@@ -23,26 +23,12 @@ namespace DineyApi.Clients
 
         public async Task<Character?> GetCharacterByIdAsync(int id)
         {
-            int page = 1;
+            var response = await _http.GetFromJsonAsync<DisneyCharacterSingleResponse>(
+                $"character/{id}"
+            );
 
-            while (true)
-            {
-                var response = await _http.GetFromJsonAsync<DisneyCharacterResponse>(
-                    $"character?page={page}"
-                );
-
-                var character = response?.data?.FirstOrDefault(x => x._id == id);
-
-                if (character != null)
-                    return character;
-
-                if (response?.info?.nextPage == null)
-                    break;
-
-                page++;
-            }
-
-            return null;
+            return response?.data;
         }
+
     }
 }
