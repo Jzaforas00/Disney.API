@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DineyApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c70f743f42d05e726a4cfc1586a9f3abd2545b9b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d3ed9475a60130eec2c1649ed73f0fbd080381ae")]
 [assembly: System.Reflection.AssemblyProductAttribute("DineyApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DineyApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

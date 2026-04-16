@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\users\\Propietario\\source\\repos\\Disney.API\\DineyApi\\DineyApi.csproj": {}
+    "C:\\Users\\Propietario\\source\\repos\\Disney.API\\DineyApi\\DineyApi.csproj": {}
   },
   "projects": {
-    "C:\\users\\Propietario\\source\\repos\\Disney.API\\DineyApi\\DineyApi.csproj": {
+    "C:\\Users\\Propietario\\source\\repos\\Disney.API\\DineyApi\\DineyApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\users\\Propietario\\source\\repos\\Disney.API\\DineyApi\\DineyApi.csproj",
+        "projectUniqueName": "C:\\Users\\Propietario\\source\\repos\\Disney.API\\DineyApi\\DineyApi.csproj",
         "projectName": "DineyApi",
-        "projectPath": "C:\\users\\Propietario\\source\\repos\\Disney.API\\DineyApi\\DineyApi.csproj",
+        "projectPath": "C:\\Users\\Propietario\\source\\repos\\Disney.API\\DineyApi\\DineyApi.csproj",
         "packagesPath": "C:\\Users\\Propietario\\.nuget\\packages\\",
-        "outputPath": "C:\\users\\Propietario\\source\\repos\\Disney.API\\DineyApi\\obj\\",
+        "outputPath": "C:\\Users\\Propietario\\source\\repos\\Disney.API\\DineyApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

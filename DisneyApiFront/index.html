@@ -19,16 +19,16 @@
       <h2>REST API</h2>
 
       <div class="controls">
-        <input id="searchInput" type="text" placeholder="Buscar personaje...">
+        <input id="searchInputREST" type="text" placeholder="Buscar personaje...">
         <button onclick="buscarREST()">Buscar</button>
       </div>
 
       <div class="cards" id="rest-list"></div>
 
       <div class="pagination">
-        <button onclick="anterior()">Anterior</button>
+        <button onclick="anteriorREST()">Anterior</button>
         <span id="pagina-rest">Página 1</span>
-        <button onclick="siguiente()">Siguiente</button>
+        <button onclick="siguienteREST()">Siguiente</button>
       </div>
     </section>
 
@@ -37,16 +37,16 @@
       <h2>GraphQL API</h2>
 
       <div class="controls">
-        <input type="text" placeholder="Buscar personaje...">
+        <input id="searchInputGraphQL" type="text" placeholder="Buscar personaje...">
         <button onclick="buscarGraphQL()">Buscar</button>
       </div>
 
       <div class="cards" id="graphql-list"></div>
 
       <div class="pagination">
-        <button>Anterior</button>
+        <button onclick="anteriorGraphQL()">Anterior</button>
         <span id="pagina-graphql">Página 1</span>
-        <button>Siguiente</button>
+        <button onclick="siguienteGraphQL()">Siguiente</button>
       </div>
     </section>
 

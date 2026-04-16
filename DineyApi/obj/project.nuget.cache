@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zlhWThFNTqs=",
+  "dgSpecHash": "bv+vpnEGvi8=",
   "success": true,
-  "projectFilePath": "C:\\users\\Propietario\\source\\repos\\Disney.API\\DineyApi\\DineyApi.csproj",
+  "projectFilePath": "C:\\Users\\Propietario\\source\\repos\\Disney.API\\DineyApi\\DineyApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Propietario\\.nuget\\packages\\chillicream.nitro.app\\28.0.7\\chillicream.nitro.app.28.0.7.nupkg.sha512",
     "C:\\Users\\Propietario\\.nuget\\packages\\greendonut\\15.1.14\\greendonut.15.1.14.nupkg.sha512",

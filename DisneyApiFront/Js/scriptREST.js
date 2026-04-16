@@ -1,25 +1,26 @@
 const API_URL = "http://localhost:5169/api/characters";
 
 let page = 1;
+let nombreBusquedaREST = "";
 
 document.addEventListener("DOMContentLoaded", () => {
   cargarPersonajes();
 });
 
-// 🔵 GET personajes
-async function cargarPersonajes(name = "") {
+// GET personajes
+async function cargarPersonajes() {
   try {
     let url = `${API_URL}?page=${page}&pageSize=8`;
 
-    if (name) {
-      url += `&name=${name}`;
+    if (nombreBusquedaREST) {
+      url += `&name=${nombreBusquedaREST}`;
     }
 
     const response = await fetch(url);
     const result = await response.json();
 
     pintar(result.data);
-    actualizarPagina(result.info);
+    actualizarPaginaREST(result.info);
 
   } catch (error) {
     console.error("Error:", error);
@@ -42,8 +43,8 @@ function pintar(personajes) {
   });
 }
 
-// ctualizar paginación UI
-function actualizarPagina(info) {
+// actualizar paginación UI
+function actualizarPaginaREST(info) {
   document.getElementById("pagina-rest").textContent = page;
 
   console.log(info);
@@ -51,13 +52,15 @@ function actualizarPagina(info) {
 
 // búsqueda
 function buscarREST() {
-  const name = document.getElementById("searchInput").value;
+  const inputR = document.getElementById("searchInputREST");
+  nombreBusquedaREST = inputR.value;
+
   page = 1;
-  cargarPersonajes(name);
+  cargarPersonajes(nombreBusquedaREST);
 }
 
-// anterior
-function anterior() {
+// Paginador
+function anteriorREST() {
   if (page > 1) {
     page--;
     cargarPersonajes();
@@ -65,7 +68,7 @@ function anterior() {
 }
 
 // siguiente
-function siguiente() {
+function siguienteREST() {
   page++;
   cargarPersonajes();
 }
